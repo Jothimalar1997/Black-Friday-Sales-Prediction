@@ -121,6 +121,8 @@ class DataTransformation:
             input_feature_test_df['Product_Category_2']=input_feature_test_df['Product_Category_2'].astype('object')
             input_feature_test_df['Product_Category_3']=input_feature_test_df['Product_Category_3'].astype('object')
             
+            input_feature_train_df=input_feature_train_df.drop_duplicates(keep='first')
+
             ## Transformating using preprocessor obj
             input_feature_train_arr=preprocessing_obj.fit_transform(input_feature_train_df)
             input_feature_test_arr=preprocessing_obj.transform(input_feature_test_df)
