@@ -1,0 +1,167 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+    <label for="Gender">Gender:</label>
+    <select id="Gender" name="Gender">
+      <option value="M">M</option>
+      <option value="F">F</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="Age">Age:</label>
+    <select id="Age" name="Age">
+      <option value="0-17">0-17</option>
+      <option value="18-25">18-25</option>
+      <option value="26-35">26-35</option>
+      <option value="36-45">36-45</option>
+      <option value="46-50">46-50</option>
+      <option value="51-55">51-55</option>
+      <option value="55+">55+</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="Occupation">Occupation:</label>
+    <select id="Occupation" name="Occupation">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="City_Category">City_Category</label>
+    <select id="City_Category" name="City_Category">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="Stay_In_Current_City_Years">Stay_In_Current_City_Years:</label>
+    <select id="Stay_In_Current_City_Years" name="Stay_In_Current_City_Years">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4+">4+</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="Marital_Status">Marital_Status:</label>
+    <select id="Marital_Status" name="Marital_Status">
+      <option value="0">0</option>
+      <option value="1">1</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="Product_Category_1">Product_Category_1:</label>
+    <select id="Product_Category_1" name="Product_Category_1">
+        <option value="nan">nan</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="Product_Category_2">Product_Category_2:</label>
+    <select id="Product_Category_2" name="Product_Category_2">
+        <option value="nan">nan</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="Product_Category_3">Product_Category_3:</label>
+    <select id="Product_Category_3" name="Product_Category_3">
+      <option value="nan">nan</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+    </select>
+  </div>
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+
+{{final_result}}
+</body>
+</html>

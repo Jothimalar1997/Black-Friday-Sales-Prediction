@@ -16,11 +16,8 @@ if __name__=='__main__':
     print(train_data_path,test_data_path)
 
     data_transformation=DataTransformation()
-
     train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data_path,test_data_path)
-    # print(pd.DataFrame(train_arr).isna().sum())
-    # print(pd.DataFrame(test_arr).isna().sum())
-
+   
     model_trainer=ModelTrainer()
     model_trainer.initate_model_training(train_arr,test_arr)
 
