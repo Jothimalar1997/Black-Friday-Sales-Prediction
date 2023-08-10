@@ -102,6 +102,9 @@ class DataTransformation:
             target_column_name = 'Purchase'
             drop_columns = [target_column_name,'User_ID','Product_ID']
 
+            train_df=train_df.drop_duplicates(keep='first')
+
+
             input_feature_train_df = train_df.drop(columns=drop_columns,axis=1)
             logging.info(input_feature_train_df)
             target_feature_train_df=train_df[target_column_name]
@@ -121,8 +124,7 @@ class DataTransformation:
             input_feature_test_df['Product_Category_2']=input_feature_test_df['Product_Category_2'].astype('object')
             input_feature_test_df['Product_Category_3']=input_feature_test_df['Product_Category_3'].astype('object')
             
-            input_feature_train_df=input_feature_train_df.drop_duplicates(keep='first')
-
+            
             ## Transformating using preprocessor obj
             input_feature_train_arr=preprocessing_obj.fit_transform(input_feature_train_df)
             input_feature_test_arr=preprocessing_obj.transform(input_feature_test_df)
