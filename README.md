@@ -9,6 +9,7 @@ To build a model to predict the purchase amount of customer against various prod
 
 ## Dataset Link:
 https://drive.google.com/drive/folders/1IOQh5zJ4QDLfU55-gOzI39kCZx3ikJB5?usp=sharing
+(Refer Train Zip File)
 
 ## Requirements:
 Python
