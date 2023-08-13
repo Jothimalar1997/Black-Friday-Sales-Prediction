@@ -7,6 +7,9 @@ They have shared purchase summary of various customers for selected high volume 
 ## Goal:
 To build a model to predict the purchase amount of customer against various products which will help them to create personalized offer for customers against different products.
 
+## Project demo:
+You can take a look at [this video](https://www.linkedin.com/posts/jothimalar-paulpandi-a6b361264_day172-internship-intership2023-activity-7095657518525267968-pw5p?utm_source=share&utm_medium=member_desktop) where I have explained about my project in detail.
+
 ## Dataset Link:
 https://drive.google.com/drive/folders/1IOQh5zJ4QDLfU55-gOzI39kCZx3ikJB5?usp=sharing
 (Refer Train Zip File)
